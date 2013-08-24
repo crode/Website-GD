@@ -2,7 +2,7 @@
 // Date
 $year = 2013;
 $month = 8;
-$day = 31;
+$day = 24;
 
 $sdate = mktime(0, 0, 0, 8, 19, 2013, 0); // Start date
 $cdate = mktime(0, 0, 0, $month, $day, $year, 0); // Goal date
@@ -25,7 +25,7 @@ echo("<!-- $daysleft/($daystotal)*100 -->");
 
 <html>
 	<head>
-		<title>t h e · g l a s s · d e c a d e</title>
+		<title>t h e - g l a s s - d e c a d e</title>
 		<meta name="description" content="" /><meta name="keywords" content="" />
 		
 		
@@ -57,7 +57,33 @@ echo("<!-- $daysleft/($daystotal)*100 -->");
 		position: absolute;
 		top: 15%;
 		left: 0px;
-		height: 700px;
+		height: 330px;
+		}
+		
+		#byline {
+		width: 100%;
+		background-image: url(img/date.png);
+		background-repeat: no-repeat;
+		background-position: top center;
+		display: block;
+		position: absolute;
+		bottom: 10%;
+		left: 0px;
+		height: 150px;
+		}
+		
+		object {
+		position: absolute;
+		bottom: 15%;
+		left: 50%;	
+		width: 200px;
+		margin-left: -100px;
+		margin-bottom: 150px;
+		background-color: rgba(255, 255, 255, 0.35);
+		-webkit-border-radius: 5px;
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		padding: 5px;
 		}
 		</style>
 	</head>
@@ -65,6 +91,9 @@ echo("<!-- $daysleft/($daystotal)*100 -->");
 	
 	<div id="background"></div>
 	<div id="content"></div>
+	<a id="byline" href="http://20thstreetblockparty.com/afterparty.php"></a>
 	
+<object height="18" width="100%"><param name="movie" value="https://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F101457115&amp;color=ffffff&amp;auto_play=false&amp;player_type=tiny&amp;font=Verdana"></param><param name="allowscriptaccess" value="always"></param><param name="wmode" value="transparent"></param><embed wmode="transparent" allowscriptaccess="always" height="18" width="100%" src="https://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F101457115&amp;color=ffffff&amp;auto_play=false&amp;player_type=tiny&amp;font=Verdana"></embed></object>
+
 	</body>
 </html>
